@@ -17,7 +17,8 @@ def task5counter(n):
         pow(2, n)) + ", d.h.: " + str(counter2 / pow(2, n) * 100) + "%")
 
 
-def test_condition(testString):
+def test_condition(
+        testString):  # https://oeis.org/search?q=0%2C0%2C0%2C0%2C1%2C2%2C7%2C16%2C38&language=german&go=Suche
     # print("testCondition called on: " + testString)
     n = len(testString)
     counter101 = occurrences(testString, "101")
@@ -29,7 +30,8 @@ def test_condition(testString):
     return False
 
 
-def test_condition2(testString):
+def test_condition2(
+        testString):  # https://oeis.org/search?q=2%2C4%2C6%2C10%2C17%2C28%2C49%2C84&sort=&language=german&go=Suche
     # print("testCondition called on: " + testString)
     n = len(testString)
     counter101 = occurrences(testString, "101")
