@@ -37,10 +37,10 @@ def word_by_lexicographical_index(alphabet, index):
 
 
 def main():
-    # print(
-    #     "An alphabet of cardinality 10 has not more than " + str(
-    #         word_count_by_maximum_word_length_and_alphabet_cardinality(
-    #             4, 10)) + " words of length 4 or shorter!")
+    print(
+        "An alphabet of cardinality 3 has not more than " + str(
+            word_count_by_maximum_word_length_and_alphabet_cardinality(
+                5, 3)) + " words of length 5 or shorter!")
     # print(
     #     "An alphabet of cardinality 5 has not more than " + str(
     #         word_count_by_maximum_word_length_and_alphabet_cardinality(
@@ -56,6 +56,9 @@ def main():
     print("Nr. 1.5a) \"abba\" steht an Stelle " + str(
         position_in_lexicographical_order(['a', 'b', 'c', 'd', 'e'], "abba")) + " im Alphabet {a,b,c,d,e}")
     print("Nr. 1.5b) An Stelle 1000 steht das Wort " + word_by_lexicographical_index(['a', 'b', 'c', 'd', 'e'], 1000))
+    print("Nr. 2.1: " + str(
+        position_in_lexicographical_order(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k'], "aaaa")))
+    print("Nr. 2.2: " + str(word_by_lexicographical_index(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k'], 11110)))
 
 
 if __name__ == "__main__":
